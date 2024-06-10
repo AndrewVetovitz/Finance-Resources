@@ -1,0 +1,21 @@
+ticker,companyName,marketCap,pricePerEarningsRatio,PricePerSalesRatio,pricePerBookRatio,pricePerCashFlowRatio,dividendYield,sixMonthRelativeStrength,currentPrice,EV/EBITDA,buyBackYield
+A,Agilent Technologies Inc.,38800000000,31.42,5.89,6.24,25.23,0.71%,3.16%,,0,0
+AA,Alcoa Corp,7350000000,-,0.69,1.84,-,0.85%,62.86%,,0,0
+AACT,Ares Acquisition Corporation II,666560000,39.41,-,1.31,-,-,2.84%,,0,0
+AAL,American Airlines Group Inc,7550000000,19.27,0.14,-,-,-,-14.69%,,0,0
+AAOI,Applied Optoelectronics Inc,410500000,-,2.00,2.09,-,-,-38.73%,,0,0
+AAON,AAON Inc.,5920000000,33.45,5.08,7.53,43.65,0.44%,12.59%,,0,0
+AAP,Advance Auto Parts Inc,3850000000,93.23,0.34,1.50,8.23,1.90%,17.08%,,0,0
+AAPL,Apple Inc,3019130000000,30.62,7.91,40.70,29.62,0.50%,2.38%,,0,0
+AAT,American Assets Trust Inc,1300000000,24.10,2.94,1.09,10.67,6.83%,1.09%,,0,0
+AB,AllianceBernstein Holding Lp,3850000000,13.80,-,1.85,12.66,8.95%,17.49%,,0,0
+ABBV,Abbvie Inc,299170000000,50.44,5.50,37.36,13.69,3.65%,15.74%,,0,0
+ABCB,Ameris Bancorp,3290000000,11.60,2.21,0.94,7.51,1.28%,3.77%,,0,0
+ABCL,AbCellera Biologics Inc,1060000000,-,29.74,0.94,-,-,-25.36%,,0,0
+ABEV,Ambev S.A. ADR,34170000000,11.69,2.12,1.98,8.50,6.43%,-19.14%,,0,0
+ABG,Asbury Automotive Group Inc,4720000000,8.53,0.31,1.41,-,-,9.13%,,0,0
+ABL,Abacus Life Inc,663590000,369.40,8.54,3.96,-,-,48.29%,,0,0
+ABM,ABM Industries Inc.,3220000000,13.32,0.39,1.73,9.28,1.76%,18.82%,,0,0
+ABNB,Airbnb Inc,93110000000,19.65,9.09,11.81,22.28,-,8.39%,,0,0
+ABR,Arbor Realty Trust Inc.,2550000000,8.42,1.59,1.04,4.58,12.72%,2.81%,,0,0
+ABSI,Absci Corp,495290000,-,92.58,2.06,-,-,95.54%,,0,0
