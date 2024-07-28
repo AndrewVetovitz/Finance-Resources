@@ -28,19 +28,23 @@ class Scalper {
   }
 
   map(d, _i, history) {
+    if (!d.isComplete()) {
+      return;
+    }
+
     this.ema(d.value());
-    this.movingAverage(d.value());
 
     if (!history || !history.prior() || !history.prior().value()) {
       return;
     }
 
-    this.Open = [history.prior().open(), d.open()];
-    this.Close = [history.prior().close(), d.close()];
-    this.Low = [history.prior().low(), d.low()];
-    this.High = [history.prior().high(), d.high()];
+    this.Open = [d.open(), history.prior().open()];
+    this.Close = [d.close(), history.prior().close()];
+    this.Low = [d.low(), history.prior().low()];
+    this.High = [d.high(), history.prior().high()];
+    const atr = this.customAtr(d, history);
 
-    if (!this.UseAtr || this.customAtr(d, history) > this.AtrMinimum) {
+    if (!this.UseAtr || atr > this.AtrMinimum) {
       let isPossibleShort =
         this.Low[1] < this.Low[0] &&
         this.High[1] < this.High[0] &&
@@ -59,6 +63,8 @@ class Scalper {
           isPossibleLong && this.barClearedEma(PositionType.Long);
       }
 
+      const truncatedAtr = Math.trunc((atr / 2.0) * 100) / 100;
+
       if (isPossibleShort) {
         return {
           graphics: {
@@ -70,7 +76,7 @@ class Scalper {
                   x: op(du(d.index()), "-", px(0)),
                   y: op(du(d.high()), "-", px(15)),
                 },
-                text: "*",
+                text: "*\n" + truncatedAtr,
                 style: {
                   fontSize: 24,
                   fontWeight: "bold",
@@ -92,7 +98,7 @@ class Scalper {
                   x: op(du(d.index()), "-", px(0)),
                   y: op(du(d.low()), "+", px(25)),
                 },
-                text: "*",
+                text: "*\n" + truncatedAtr,
                 style: {
                   fontSize: 24,
                   fontWeight: "bold",
